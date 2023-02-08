@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 import { TimeLine } from '../components/TimeLine'
 
 const tecnologies = [ 
@@ -18,25 +19,20 @@ const tecnologies = [
 ]
 
 export const AboutMe = () => {
+    
+    const { t, i18n } = useTranslation();
+
     return (
         <div className='row cont-center'>
             <div className="col-12 col-md-12">
                 <div>
-                    <p className='title-md'>About</p>
-                    <p>
-                        ¡Hola! Mi nombre es <b>David Ledezma</b> y disfruto creando cosas en Internet. 
-                        Mi interés en la progrmacion comenzó en 2016 cuando decidí estudiar la ingenieria en ciencias computacionales en UDG despues de mucho 
-                        esfuerzo y concluir mis estudios encontre una pasion en el desarrollo web especializandome en fronend y en el backend. 
-                    </p>
-                    <p>
-                        Avance rápido hasta hoy, y tuve la oportunidad de trabajar en algunas startup y empresas de diferente giro con lo cual 
-                        he podido crear cosas interesantes y elevar mi nivel. 
-                        Actualmente mi enfoque principal es crear productos que faciliten la vida de los usuarios.
-                    </p>
+                    <p className='title-md'> {t('home')} </p>
+                    <p> {t('homeMsj_1')} </p>
+                    <p> {t('homeMsj_2')} </p>
                 </div>
 
                 <div>
-                    <p className='title-md'>Habilidades</p>
+                    <p className='title-md'> {t('skills')} </p>
                     <p>
                         {tecnologies.map( (item => 
                             <span className="badge rounded-pill text-bg-secondary mx-1">{item}</span>
@@ -44,7 +40,7 @@ export const AboutMe = () => {
                     </p>
                 </div>
                 <div>
-                    <p className='title-md'>Experiencia</p>
+                    <p className='title-md'> {t('experience')} </p>
                     <TimeLine />
                 </div>
             </div>

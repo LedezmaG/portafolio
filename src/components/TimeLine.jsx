@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 import { TimeLineItem } from './TimeLineItem'
 
 const timeLine = [
@@ -7,27 +8,36 @@ const timeLine = [
         position: "Frontend developer",
         dates: "07/2022 - 02/2023",
         activities: [
-            "Manejo y administracion de plataforma VTEX (e-commerce)",
-            "Creacion, optimizacion y mantenimiento de modulos en plataforma VTEX",
-            "Creacion, optimizacion y mantenimiento de modulos basado en React.js",
-            "Consumo y creacion de funciones API Rest con Express.js y GraphQL",
-            "Realizacion de pruebas funcionales y unitarias para calidad de producto",
-            "Uso de metodologias agiles SCRUM (certificacion) y AGILE",
-            " Optimisaciones de sonarqube"
+            "homeEx1_1",
+            "homeEx1_2",
+            "homeEx1_3",
+            "homeEx1_4",
+            "homeEx1_5",
+            "homeEx1_6",
+            "homeEx1_7",
         ]
     },
     {
         company: "Dynamic solutions",
-        position: "Full stack developer",
+        position: "Fullstack developer",
         dates: "04/2019 - 06/2022",
         activities: [
-            "Manejo y administracion de plataforma VTEX (e-commerce)",
-            "Creacion, optimizacion y mantenimiento de modulos en plataforma VTEX",
-            "Creacion, optimizacion y mantenimiento de modulos basado en React.js",
-            "Consumo y creacion de funciones API Rest con Express.js y GraphQL",
-            "Realizacion de pruebas funcionales y unitarias para calidad de producto",
-            "Uso de metodologias agiles SCRUM (certificacion) y AGILE",
-            "Optimisaciones de sonarqube"
+            "homeEx2_1",
+            "homeEx2_2",
+            "homeEx2_3",
+            "homeEx2_4",
+            "homeEx2_5",
+            "homeEx2_6",
+        ]
+    },
+    {
+        company: "Freebalance",
+        position: "Fullstack developer",
+        dates: "08/2018 - 02/20219",
+        activities: [
+            "homeEx4_1",
+            "homeEx4_2",
+            "homeEx4_3",
         ]
     },
     {
@@ -35,15 +45,18 @@ const timeLine = [
         position: "Tecnico especialista",
         dates: "08/2018 - 02/20219",
         activities: [
-            "Proyecto de Seguridad urbana (C5) por parte del gobierno del estado",
-            "Planificación y administracion de rutas de instalación",
-            "Ensamblaje y programación de switches y broad",
-            "Configuracion de camaras de seguridad."
+            "homeEx5_1",
+            "homeEx5_2",
+            "homeEx5_3",
+            "homeEx5_4",
         ]
     },
 ] 
 
 export const TimeLine = () => {
+    
+    const { t } = useTranslation();
+    
     return (
         <div className="timeline_area">
             { timeLine.map( (item) => 
@@ -56,7 +69,7 @@ export const TimeLine = () => {
                         </p>
                     </div>
                     <div className="row">
-                        { item.activities.map( (activiti) => <TimeLineItem > {activiti} </TimeLineItem> )}
+                        { item.activities.map( (activiti) => <TimeLineItem > {t(activiti)} </TimeLineItem> )}
                     </div>
                 </div>
             )}

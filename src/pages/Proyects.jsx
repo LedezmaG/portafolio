@@ -1,9 +1,10 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 const projets = [
     {
         title: "Elektra",
-        description: "Creacion, optimizacion y mantenimiento de modulos para pagina de elektra.com.mx haciendo uso de un marco de trabajo agil como Scrum",
+        description: "pys_des_1",
         company: "Grupo Salinas",
         position: "Fontend developer",
         tecnologies: [
@@ -19,7 +20,7 @@ const projets = [
     },
     {
         title: "Vinos America Suite",
-        description: "Sistema de administracion de almacenes (WMS) con diferentes roles de usuario y permisos por modulo, con implementacion a canales de venta como woocommerce y mercado libre haciendo segimiento desde la venta hasta salida del almacen. ",
+        description: "pys_des_1",
         company: "Dynamic Solutions",
         position: "Fullstack developer",
         tecnologies: [
@@ -34,7 +35,7 @@ const projets = [
     },
     {
         title: "Vinos America App",
-        description: " Aplicacion movil con diferentes roles de usuario y permisos por modulo, haciendo seguimiento de las diferentes etapas del flijo de surtido de un almacen cada usuario con funciones esfecificas a su rol.",
+        description: "pys_des_1",
         company: "Dynamic Solutions",
         position: "Fullstack developer",
         tecnologies: [
@@ -49,7 +50,7 @@ const projets = [
     },
     {
         title: "Go Logistics",
-        description: "Sistema web con diferentes roles de usuario y permisos por modulo, generando revisiones de entrada y salida de veiculos a rutas de entrega de ultimo punto, asi como levantamiento de accidentes y control de conductores, vehiculos y de mas.",
+        description: "pys_des_1",
         company: "Dynamic Solutions",
         position: "Fullstack developer",
         tecnologies: [
@@ -61,7 +62,7 @@ const projets = [
     },
     {
         title: "Kipper",
-        description:  "Sistema web estudiantil con diferentes roles de usuario y permisos por modulo, con varias funcionalidades como listas de alumnos, toma de asistencias, tareas, avisos, control de maestros, materias y mas.",
+        description: "pys_des_1",
         company: "Dynamic Solutions",
         position: "Fullstack developer",
         tecnologies: [
@@ -72,7 +73,7 @@ const projets = [
     },
     {
         title: "Bankple",
-        description:  "Sistema web de envio remesas con diferentes roles de usuario y permisos por modulo, con varias funcionalidades como revison de saldos, envio y recibo de remesas. ",
+        description: "pys_des_1",
         company: "Dynamic Solutions",
         position: "Fullstack developer",
         tecnologies: [
@@ -85,27 +86,30 @@ const projets = [
 ]
 
 export const Proyects = () => {
+    
+    const { t } = useTranslation();
+
     return (
         <div className='row cont-center'>
             <div className="col-12 col-md-12">
-                <p className='title-md'>Proyectos</p>
+                <p className='title-md'>{t('projects')}</p>
                 { projets.map((project) => 
                     <div className='row'>
                         <div>
                             <h4>{ project.title }</h4>
                             <p>
-                                <b>Compañía:</b> {project.company} 
+                                <b> {t('company')}:</b> {project.company} 
                                 <br />
-                                <b>Posición:</b> {project.position}
+                                <b> {t('position')}:</b> {project.position}
                             </p>
                             <p>
-                                <b>Descripción:</b><br />
-                                { project.description} 
+                                <b> {t('description')}:</b><br />
+                                {t(project.description)}
                             </p>
                         </div>
                         <div className="col-12">
                             <p>
-                                <b>Tecnologias:</b>
+                                <b>{t('technologies')}:</b>
                                 <br />
                                 { project.tecnologies.map((item)=> <span className="badge rounded-pill text-bg-secondary mx-1">{item}</span>)}
                             </p>

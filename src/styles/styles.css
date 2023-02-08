@@ -71,12 +71,15 @@ body, html {
     cursor: pointer;
     text-decoration: none;
     color: var(--txt);
+    opacity: 0.8;
 }
 .nav-menu a:hover {
-    opacity: 0.8;
+    opacity: 1;
+    transition: all .1s ease-in-out;
 }
-.active {
-    opacity: 0.8;
+.nav-menu .active {
+    opacity: 1;
+    text-decoration: underline;
 }
 .txt-primary{
     color:  var(--txt);
@@ -207,11 +210,19 @@ footer {
     color: var(--background);
 }
 
-.theme{
-    cursor: pointer;
+.sub-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    
 }
-.theme .active{
+.sub-menu span {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.sub-menu .active {
     text-decoration: underline;
+    opacity: 1;
 }
 
 @media only screen and (max-width: 575px) {

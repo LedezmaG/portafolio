@@ -1,9 +1,12 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 export const Footer = () => {
+    const { t } = useTranslation();
+    
     return (
         <footer>
-            Diseñado y costruido por &nbsp;<b> David Ledezma </b>
+            {t('footer')}  &nbsp; <b> David Ledezma </b>
         </footer>
     )
 }

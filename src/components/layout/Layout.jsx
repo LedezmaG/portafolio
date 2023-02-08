@@ -3,6 +3,7 @@ import { Menu } from './Menu'
 import { NavBar } from './NavBar'
 import { Footer } from './Footer'
 
+import './../../utils/Translate';
 import '../../styles/styles.css'
 import '../../styles/global.css'
 

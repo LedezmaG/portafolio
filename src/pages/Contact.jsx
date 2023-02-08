@@ -1,16 +1,18 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 import cv from './../assets/CV - 2023 ES .pdf'
 
 export const Contact = () => {
+    
+    const { t } = useTranslation();
+
     return (
         <div className='row cont-center'>
             <div className="col-12 col-md-12">
-                <p className='title-md'>Contacto</p>
-                <p>
-                    Si quieres ponerte en contacto conmigo, hablar conmigo sobre un proyecto de colaboración o simplemente decir hola,
-                    puedes comunicarte a mi correo eletronico o segirme atravez de mis redes sociales.
+                <p className='title-md'>{t('contact_title')}</p>
+                <p> 
+                    {t('contact_msj')}
                     <a className='link' href="mailto:israeledezmag@gmail.com"> israeledezmag@gmail.com </a>
-                    
                 </p>
             </div>
             <div className="col-12 col-md-12">
