@@ -20,7 +20,7 @@ const tecnologies = [
 
 export const AboutMe = () => {
     
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <div className='row cont-center'>
