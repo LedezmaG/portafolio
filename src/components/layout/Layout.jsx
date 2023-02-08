@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Menu } from './Menu'
 import { NavBar } from './NavBar'
+import { Footer } from './Footer'
 
 import '../../styles/styles.css'
 import '../../styles/global.css'
@@ -13,15 +14,16 @@ export const Layout = ({ children }) => {
 
     return (
         <div className='main' data-theme={theme}>
-            <div className="content">
-                <div className="row">
-                    <div className="col-12 col-md-4">
+            <div className="content row">
+                <div className="col-12 col-md-3">
+                    <div className="nav-content">
                         <NavBar />
                         <Menu theme={theme} onTheme={onTheme} />
                     </div>
-                    <div className="col-12 col-md-8">
-                        { children }  
-                    </div>
+                </div>
+                <div className="col-12 col-md-9 wrapper">
+                    { children }  
+                    <Footer />
                 </div>
             </div>
         </div>
