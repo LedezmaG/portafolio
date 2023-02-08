@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&family=Source+Code+Pro&display=swap');
+
+body, html {
+    height: 100vh;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+#root{
+    height: 100%;
+}
+
+.main {
+    background-color: var(--background);
+    color: var(--txt);
+    height: 100%;
+    padding: 35px;
+    transition: all .9s ease-in-out;
+}
+
+.content {
+    height: 100%;
+    border: 2px solid var(--border);
+    padding: 30px;
+    overflow-y: scroll;
+}
+
+/* Scroll bar */
+.content::-webkit-scrollbar-thumb {
+    background-color: var(--border);
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    opacity: 0.5;
+}
+.content::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.content::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Nav bar */
+.nav-custom {
+    display: flex;
+    align-content: center;
+}
+.nav-title {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+}
+.nav-title span { 
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 60px;
+}
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+}
+.nav-menu a {
+    font-weight: bold;
+    margin: 0 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--txt);
+}
+.nav-menu a:hover {
+    opacity: 0.8;
+}
+.active {
+    opacity: 0.8;
+}
+
+.txt-primary{
+    color:  var(--txt);
+}
+.cont-center {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.title-md {
+    font-size: 40px;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.p-content {
+    border-left: 5px solid var(--txt);
+    padding-left: 15px;
+}
+
+.list-custom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.link{
+    font-weight: bold;
+    color: var(--txt);
+    text-decoration: none;
+}
+
+/* Time line */
+.timeline_area {
+    position: relative;
+    z-index: 1;
+}
+.single-timeline-area {
+    position: relative;
+    z-index: 1;
+    padding-left: 180px;
+}
+.single-timeline-area .timeline-date {
+    position: absolute;
+    width: 180px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-right: 60px;
+    
+}
+.single-timeline-area .timeline-date::before {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--txt);
+    content: "";
+    top: 50%;
+    right: 27px;
+    z-index: 5;
+    margin-top: -5.5px;
+}
+.single-timeline-area .timeline-date p {
+    margin-bottom: 0;
+    color: var(--txt);
+    font-size: 13px;
+    font-weight: bold;
+}
+.single-timeline-area .single-timeline-content {
+    position: relative;
+    z-index: 1;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-left: 2px solid var(--txt);
+}
+.single-timeline-area .single-timeline-content .timeline-text p {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+/* Form */
+.form-contact input {
+    background-color: transparent;
+    border-color: 1px solid var(--border);
+    color: var(--txt);
+    border-radius: 0;
+}
+.form-contact textarea {
+    background-color: transparent;
+    border-color: 1px solid var(--border);
+    color: var(--txt);
+    border-radius: 0;
+}
+.form-contact input:focus  {
+    background-color: transparent !important;
+    color: var(--txt) !important;
+    border-color: 1px solid var(--border);
+    box-shadow: none;
+}
+.form-contact textarea:focus  {
+    background-color: transparent !important;
+    color: var(--txt) !important;
+    border-color: 1px solid var(--border);
+    box-shadow: none;
+}
+
+.btn-cus {
+    border-radius: 0;
+    color: var(--txt);
+    border-color: 1px solid var(--border);
+}
+.btn-cus:hover {
+    background-color: var(--txt);
+    color: var(--background);
+}
+
+.theme{
+    cursor: pointer;
+}
+.theme .active{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 575px) {
+    .single-timeline-area {
+        padding-left: 100px;
+    }
+    .single-timeline-area .timeline-date {
+        width: 100px;
+    }
+    .single-timeline-area .single-timeline-content {
+        padding: 20px;
+    }
+}
+

@@ -1,0 +1,10 @@
+:root {
+    --background: #E5E5E5;
+    --txt: #1A1A1A;
+    --border: #7F7F7F;
+}
+
+[data-theme='dark'] {
+    --background: #1A1818;
+    --txt: #D1D1D1;
+}
