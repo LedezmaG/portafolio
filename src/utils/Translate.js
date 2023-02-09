@@ -60,7 +60,7 @@ const resources = {
     en: {
         translation: {
             home: 'Home',
-            projects: 'Pcorojects',
+            projects: 'Projects',
             contact: 'Contact',
             about: 'About me',
             skills: 'Skills',
