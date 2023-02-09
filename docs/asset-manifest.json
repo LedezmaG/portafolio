@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/portafolio/static/css/main.0743f897.css",
-    "main.js": "/portafolio/static/js/main.b133c955.js",
+    "main.js": "/portafolio/static/js/main.ca28f4ba.js",
     "static/media/CV - 2023 ES .pdf": "/portafolio/static/media/CV - 2023 ES .0f6dec8f49243c725fb1.pdf",
     "index.html": "/portafolio/index.html",
     "main.0743f897.css.map": "/portafolio/static/css/main.0743f897.css.map",
-    "main.b133c955.js.map": "/portafolio/static/js/main.b133c955.js.map"
+    "main.ca28f4ba.js.map": "/portafolio/static/js/main.ca28f4ba.js.map"
   },
   "entrypoints": [
     "static/css/main.0743f897.css",
-    "static/js/main.b133c955.js"
+    "static/js/main.ca28f4ba.js"
   ]
 }
