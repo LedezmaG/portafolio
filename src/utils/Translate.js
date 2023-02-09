@@ -71,6 +71,7 @@ const resources = {
             
             homeMsj_1: 'Hello! My name is David and I enjoy creating things on internet. My interest in web development started back in 2016 when I decided study engineering in computer science at UDG After a lot of effort and finishing my studies, I found a passion in web development focus in frontend and backend.',
             homeMsj_2: 'Fast-forward to today, and I’ve had the privilege of working in some startup and companies of a different ambit with which he could create exciting things and raise my level. Currently, my main focus is to develop products that make life easier for users.',
+            
             homeEx1_1: 'Platform management and administration VTEX (e-commerce)',
             homeEx1_2: 'Creation, optimization, and maintenance of platform modules VTEX.',
             homeEx1_3: 'Creation, optimization, and maintenance of modules React',
@@ -85,6 +86,10 @@ const resources = {
             homeEx2_4: 'Requirements analysis',
             homeEx2_5: 'Creation and maintenance of Landing pages with React and Wordpress',
             homeEx2_6: 'Google Cloud Platform Management',
+
+            homeEx4_1: 'Creation of a web system for registering people to a political party based on React.js',
+            homeEx4_2: 'Creation of API Rest with Express.js',
+            homeEx4_3: 'Creation and design of SQL data base',
 
             homeEx5_1: 'Urban Security Project (C5) by the Jalisco state government',
             homeEx5_2: 'Installation route planning',
