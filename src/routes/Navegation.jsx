@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 import { Layout } from '../components/layout/Layout';
 import { AboutMe } from '../pages/AboutMe';
@@ -16,6 +16,7 @@ export const Navegation = () => {
                     <Route path="/home" element={ <AboutMe /> } />
                     <Route path="/projets" element={ <Proyects /> } />
                     <Route path="/contact" element={ <Contact /> } />
+                    <Route path="*" element={<Navigate to="/" replace />} />
                 </Routes>
             </Layout>
         </BrowserRouter>
