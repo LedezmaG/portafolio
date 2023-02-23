@@ -1,10 +1,40 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
-import cv from './../assets/CV - 2023 ES .pdf'
+import CV_ES from './../assets/CV - 2023 ES.pdf'
+import CV_EN from './../assets/CV - 2023 EN.pdf'
+
 
 export const Contact = () => {
+
+    const { t, i18n } = useTranslation();
+
+    const ContatBtn = [
+        {
+            label: "CV",
+            href: (i18n.language === 'es') ? CV_ES : CV_EN,
+            icon: "fa-solid fa-file",
+            targer: "_blank"
+        },
+        {
+            label: "Email",
+            href: "mailto:israeledezmag@gmail.com",
+            icon: "fa-solid fa-envelope",
+            targer: "_blank"
+        },
+        {
+            label: "Github",
+            href: "https://github.com/LedezmaG",
+            icon: "fa-brands fa-github",
+            targer: "_blank"
+        },
+        {
+            label: "Linkedin",
+            href: "https://www.linkedin.com/in/israel-ledezma/",
+            icon: "fa-brands fa-linkedin-in",
+            targer: "_blank"
+        },
+    ]
     
-    const { t } = useTranslation();
 
     return (
         <div className='row cont-center'>
@@ -12,42 +42,20 @@ export const Contact = () => {
                 <p className='title-md'>{t('contact_title')}</p>
                 <p> 
                     {t('contact_msj')}
-                    <a className='link' href="mailto:israeledezmag@gmail.com"> israeledezmag@gmail.com </a>
                 </p>
             </div>
             <div className="col-12 col-md-12">
                 <p className='text-center mt-5'>
-                    <a 
-                        href={cv}
-                        target="_blank"
-                        type="button" 
-                        className="btn btn-outline-secondary btn-cus mx-1"
-                    >
-                        <i className="fa-solid fa-file" /> CV
-                    </a>
-                    <a 
-                        href="mailto:israeledezmag@gmail.com"
-                        type="button" 
-                        className="btn btn-outline-secondary btn-cus mx-1"
-                    >
-                        <i className="fa-solid fa-envelope" /> Email
-                    </a>
-                    <a 
-                        href='https://github.com/LedezmaG'
-                        target="_blank"
-                        type="button" 
-                        className="btn btn-outline-secondary btn-cus mx-1"
-                    >
-                        <i className="fa-brands fa-github" /> Github
-                    </a>
-                    <a 
-                        href='https://www.linkedin.com/in/israel-ledezma/'
-                        target="_blank"
-                        type="button" 
-                        className="btn btn-outline-secondary btn-cus mx-1"
-                    >
-                        <i className="fa-brands fa-linkedin-in" /> Linkedin
-                    </a>
+                    {ContatBtn.map(item =>     
+                        <a 
+                            href={item.href}
+                            target={item.targer}
+                            type="button" 
+                            className="btn btn-outline-secondary btn-cus mx-1 my-1"
+                        >
+                            <i className={item.icon} /> {item.label}
+                        </a>
+                    )}
                 </p>
             </div>
         </div>
