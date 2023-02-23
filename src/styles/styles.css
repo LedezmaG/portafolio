@@ -25,6 +25,14 @@ body, html {
     overflow-y: scroll;
 }
 
+.link-cus {
+    font-weight: bold;
+    margin: 0 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--txt);
+    opacity: 0.8;
+}
 /* Scroll bar */
 .content::-webkit-scrollbar-thumb {
     background-color: var(--border);
@@ -224,6 +232,13 @@ footer {
     text-decoration: underline;
     opacity: 1;
 }
+
+/* Details */
+.d-container {
+    display: flex;
+    flex-direction: column;
+}
+
 
 @media only screen and (max-width: 575px) {
     .single-timeline-area {

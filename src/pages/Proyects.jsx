@@ -1,89 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
-
-const projets = [
-    {
-        title: "Elektra",
-        description: "pys_des_1",
-        company: "Grupo Salinas",
-        position: "Fontend developer",
-        tecnologies: [
-            "JavaScript",
-            "TypeScript",
-            "Vtex",
-            "React.js",
-            "Node",
-            "Express",
-            "GraphQL",
-            "SonarQube",
-        ]
-    },
-    {
-        title: "Vinos America Suite",
-        description: "pys_des_1",
-        company: "Dynamic Solutions",
-        position: "Fullstack developer",
-        tecnologies: [
-            "JavaScript",
-            "TypeScript",
-            "React.js",
-            "Node",
-            "Express",
-            "GraphQL",
-            "Sequelize",
-        ]
-    },
-    {
-        title: "Vinos America App",
-        description: "pys_des_1",
-        company: "Dynamic Solutions",
-        position: "Fullstack developer",
-        tecnologies: [
-            "JavaScript",
-            "TypeScript",
-            "React Native",
-            "Node",
-            "Express",
-            "GraphQL",
-            "Sequelize",
-        ]
-    },
-    {
-        title: "Go Logistics",
-        description: "pys_des_1",
-        company: "Dynamic Solutions",
-        position: "Fullstack developer",
-        tecnologies: [
-            "JavaScript",
-            "React.js",
-            "Node",
-            "Express",
-        ]
-    },
-    {
-        title: "Kipper",
-        description: "pys_des_1",
-        company: "Dynamic Solutions",
-        position: "Fullstack developer",
-        tecnologies: [
-            "JavaScript",
-            "React.js",
-            "Firebases"
-        ]
-    },
-    {
-        title: "Bankple",
-        description: "pys_des_1",
-        company: "Dynamic Solutions",
-        position: "Fullstack developer",
-        tecnologies: [
-            "JavaScript",
-            "React.js",
-            "Node",
-            "Express",
-        ]
-    },
-]
+import { Link } from 'react-router-dom';
+import { ProjectsData } from '../data/Data';
 
 export const Proyects = () => {
     
@@ -93,10 +11,17 @@ export const Proyects = () => {
         <div className='row cont-center'>
             <div className="col-12 col-md-12">
                 <p className='title-md'>{t('projects')}</p>
-                { projets.map((project) => 
+                { ProjectsData.map((project) => 
                     <div className='row'>
                         <div>
-                            <h4>{ project.title }</h4>
+                            <div className="row justify-content-between w-60">
+                                <div className='col'>
+                                    <h4>{ project.title }</h4>                                
+                                </div>
+                                <div className='col text-center'>
+                                    <Link to={`/projets/${project.id}`} className="btn btn-link link-cus mx-1 my-1" > Ver mas </Link>
+                                </div>
+                            </div>
                             <p>
                                 <b> {t('company')}:</b> {project.company} 
                                 <br />
@@ -111,7 +36,7 @@ export const Proyects = () => {
                             <p>
                                 <b>{t('technologies')}:</b>
                                 <br />
-                                { project.tecnologies.map((item)=> <span className="badge rounded-pill text-bg-secondary mx-1">{item}</span>)}
+                                { project.tecnologies.map((item)=> <span className="badge rounded-pill text-bg-secondary mx-1">{t(item)}</span>)}
                             </p>
                         </div>
                         <hr />

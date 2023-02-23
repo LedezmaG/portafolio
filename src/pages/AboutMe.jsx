@@ -1,22 +1,9 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next';
 import { TimeLine } from '../components/TimeLine'
+import { TecnologiesData } from '../data/Data';
 
-const tecnologies = [ 
-    "JavaScript (ES6+)",
-    "TypeScript",
-    "React",
-    "React Native",
-    "Node.js",
-    "Express",
-    "GraphQL",
-    "Vtex",
-    "API REST",
-    "SQL",
-    "NoSQL",
-    "Metodologias Agiles",
-    "GIT"
-]
+
 
 export const AboutMe = () => {
     
@@ -34,8 +21,8 @@ export const AboutMe = () => {
                 <div>
                     <p className='title-md'> {t('skills')} </p>
                     <p>
-                        {tecnologies.map( (item => 
-                            <span className="badge rounded-pill text-bg-secondary mx-1">{item}</span>
+                        {TecnologiesData.map( (item => 
+                            <span className="badge rounded-pill text-bg-secondary mx-1"> {t(item)}</span>
                         ))}
                     </p>
                 </div>
