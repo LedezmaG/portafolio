@@ -32,6 +32,11 @@ import pavel07 from '../assets/pavel/pavel-07.png'
 import pavel08 from '../assets/pavel/pavel-08.jpg'
 import pavel09 from '../assets/pavel/pavel-09.jpg'
 
+import SCRUM from '../assets/diplomas/SCRUM Fondation.png'
+import node from '../assets/diplomas/node.pdf'
+import react0Exp from '../assets/diplomas/react0-exp.pdf'
+import jsmod from '../assets/diplomas/jsmod.pdf'
+
 
 export const ProjectsData = [
     {
@@ -110,7 +115,7 @@ export const ProjectsData = [
     {
         id: 2,
         title: "Vinos America Suite",
-        description: "pys_des_1",
+        description: "pys_des_2",
         company: "Dynamic Solutions",
         position: "Fullstack developer",
         liveView: "https://suite.vinosamerica.com/",
@@ -134,6 +139,7 @@ export const ProjectsData = [
             "details_act_02_07",
             "details_act_02_08",
             "details_act_02_09",
+            "details_act_02_10",
         ],
         gallery: [
             {
@@ -197,7 +203,7 @@ export const ProjectsData = [
     {
         id: 3,
         title: "Vinos America App",
-        description: "pys_des_1",
+        description: "pys_des_3",
         company: "Dynamic Solutions",
         position: "Fullstack developer",
         liveView: false,
@@ -220,7 +226,8 @@ export const ProjectsData = [
             "details_act_03_06",
             "details_act_03_07",
             "details_act_03_08",
-            "details_act_03_09"
+            "details_act_03_09",
+            "details_act_03_10",
         ],
         gallery: [
             {
@@ -242,7 +249,7 @@ export const ProjectsData = [
     {
         id: 4,
         title: "Go Logistics",
-        description: "pys_des_1",
+        description: "pys_des_4",
         company: "Dynamic Solutions",
         position: "Fullstack developer",
         liveView: "https://www.gologistics.net/",
@@ -286,7 +293,7 @@ export const ProjectsData = [
     {
         id: 5,
         title: "Kipper",
-        description: "pys_des_1",
+        description: "pys_des_5",
         company: "Dynamic Solutions",
         position: "Fullstack developer",
         liveView: "https://www.kiper.mx/",
@@ -334,7 +341,7 @@ export const ProjectsData = [
     {
         id: 6,
         title: "Pavel",
-        description: "pys_des_1",
+        description: "pys_des_6",
         company: "Dynamic Solutions",
         position: "Fullstack developer",
         liveView: "https://www.pavelapp.mx/",
@@ -491,3 +498,29 @@ export const TimeLineData = [
     },
 ]
 
+export const FormationData = [
+    {
+        title: "Scrum Foundation Professional Certificate (SFPC)",
+        institution: "CertiProf",
+        date: "05/2022",
+        diploma: SCRUM
+    },
+    {
+        title: "React: De cero a experto ( Hooks y MERN )",
+        institution: "Udemy",
+        date: "05/2022",
+        diploma: react0Exp
+    },
+    {
+        title: "JavaScript Moderno",
+        institution: "Udemy",
+        date: "10/2021",
+        diploma: jsmod
+    },
+    {
+        title: "Node",
+        institution: "Udemy",
+        date: "10/2021",
+        diploma: node
+    },
+]

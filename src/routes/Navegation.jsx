@@ -6,6 +6,7 @@ import { AboutMe } from '../pages/AboutMe';
 import { Proyects } from '../pages/Proyects';
 import { Contact } from '../pages/Contact';
 import { ProyectsDetails } from '../pages/ProyectsDetails';
+import { Education } from '../pages/Education';
 
 
 export const Navegation = () => {
@@ -18,6 +19,7 @@ export const Navegation = () => {
                     <Route path="/projets" element={ <Proyects /> } />
                     <Route path="/projets/:id" element={ <ProyectsDetails /> } />
                     <Route path="/contact" element={ <Contact /> } />
+                    <Route path="/education" element={ <Education /> } />
                     <Route path="*" element={<Navigate to="/" replace />} />
                 </Routes>
             </Layout>
