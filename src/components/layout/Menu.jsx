@@ -15,11 +15,11 @@ export const Menu = ({ theme, onTheme }) => {
                 <NavLink to="/projets" className={({ isActive }) => isActive ? 'active' : '' } >
                     {t('projects')}
                 </NavLink>
-                <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : '' } >
-                    {t('contact')}
-                </NavLink>
                 <NavLink to="/education" className={({ isActive }) => isActive ? 'active' : '' } >
                     {t('education')}
+                </NavLink>
+                <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : '' } >
+                    {t('contact')}
                 </NavLink>
             </div>
 

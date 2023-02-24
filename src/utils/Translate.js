@@ -36,8 +36,10 @@ const resources = {
             h_tec_15: "SonarQube",
             h_tec_16: "Firebases",
 
-            homeMsj_1: '¡Hola! Mi nombre es David Ledezma y disfruto creando cosas en Internet. Mi interés en la programación comenzó en 2016 cuando decidí estudiar la ingeniería en ciencias computacionales en UDG después de mucho esfuerzo y concluir mis estudios encontré una pasión en el desarrollo web especializandome en frontend y en el backend.',
-            homeMsj_2: 'Avance rápido hasta hoy, y tuve la oportunidad de trabajar en algunas startup y empresas de diferente giro con lo cual he podido crear cosas interesantes y elevar mi nivel. Actualmente mi enfoque principal es crear productos que faciliten la vida de los usuarios.',
+            homeMsj_1: '¡Hola! Mi nombre es David Ledezma y disfruto creando cosas en Internet. Mi interés en la programación comenzó en 2016 cuando decidí estudiar la ingeniería en ciencias computacionales en UDG después de mucho esfuerzo y concluir mis estudios encontré una pasión en el desarrollo de aplicaciones web modernas con React, Node, Express y GraphQL.',
+            homeMsj_2: 'He demostrado habilidades excepcionales en la resolución de problemas y la implementación de soluciones escalables y de alto rendimiento. También he participado en la implementación de procesos de integración continua y entrega continua para garantizar la calidad del código y la eficiencia en el despliegue.',
+            homeMsj_3: 'Además, tengo habilidades de comunicación y colaboración excepcionales, lo que me ha permitido trabajar con equipos de diferentes tamaños. Soy una persona proactiva, apasionada y comprometida con la mejora continua, siempre dispuesta a aprender y adoptar nuevas tecnologías y metodologías para el desarrollo de software.',
+            homeMsj_4: 'Avance rápido hasta hoy, y tuve la oportunidad de trabajar en algunas startup y empresas de diferente giro con lo cual he podido crear cosas interesantes y elevar mi nivel. Actualmente mi enfoque principal es crear productos que faciliten la vida de los usuarios.',
             
             homeEx1_1: 'Manejo y administración de plataforma VTEX (e-commerce)',
             homeEx1_2: 'Creación, optimización y mantenimiento de módulos de plataforma VTEX.',
@@ -168,8 +170,11 @@ const resources = {
             h_tec_15: "SonarQube",
             h_tec_16: "Firebases",
 
-            homeMsj_1: 'Hello! My name is David and I enjoy creating things on internet. My interest in web development started back in 2016 when I decided study engineering in computer science at UDG After a lot of effort and finishing my studies, I found a passion in web development focus in frontend and backend.',
-            homeMsj_2: 'Fast-forward to today, and I’ve had the privilege of working in some startup and companies of a different ambit with which he could create exciting things and raise my level. Currently, my main focus is to develop products that make life easier for users.',
+            homeMsj_1: 'Hello! My name is David and I enjoy creating things on internet. Highly skilled JavaScript programmer with experience in developing modern web applications using React, Node, Express, and GraphQL.',
+            homeMsj_2: 'I have demonstrated exceptional problem-solving skills and the ability to implement scalable and high-performance solutions. I have also participated in the implementation of continuous integration and continuous delivery processes to ensure code quality and efficiency in deployment.',
+            homeMsj_3: 'In addition, I have outstanding communication and collaboration skills, which have allowed me to work with teams of varying sizes. I am a proactive, passionate, and committed individual with a drive for continuous improvement, always willing to learn and adopt new technologies and methodologies for software development.',
+            homeMsj_4: 'Hello! My name is David and I enjoy creating things on internet. My interest in web development started back in 2016 when I decided study engineering in computer science at UDG After a lot of effort and finishing my studies, I found a passion in web development focus in frontend and backend.',
+            homeMsj_5: 'Fast-forward to today, and I’ve had the privilege of working in some startup and companies of a different ambit with which he could create exciting things and raise my level. Currently, my main focus is to develop products that make life easier for users.',
             
             homeEx1_1: 'Platform management and administration VTEX (e-commerce)',
             homeEx1_2: 'Creation, optimization, and maintenance of platform modules VTEX.',

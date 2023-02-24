@@ -16,6 +16,7 @@ export const AboutMe = () => {
                     <p className='title-md'> {t('home')} </p>
                     <p> {t('homeMsj_1')} </p>
                     <p> {t('homeMsj_2')} </p>
+                    <p> {t('homeMsj_3')} </p>
                 </div>
 
                 <div>
